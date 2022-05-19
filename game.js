@@ -47,6 +47,10 @@ function handleClick (event){
             p1score++
             score1.textContent = p1score
             alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
         }
 
 
@@ -56,6 +60,10 @@ function handleClick (event){
             p2score++ 
             score2.textContent = p2score
             alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
             // boxs[0].classList.add('winner') &&
             // boxs[1].classList.add('winner') &&
             // boxs[2].classList.add('winner')
@@ -67,6 +75,10 @@ function handleClick (event){
             p1score++
             score1.textContent = p1score
             alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
         }
         
     if (boxs[3].classList.contains('secondUser') &&
@@ -75,6 +87,10 @@ function handleClick (event){
             p2score++ 
             score2.textContent = p2score
             alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
         }
         
     if (boxs[6].classList.contains('firstUser') &&
@@ -82,14 +98,24 @@ function handleClick (event){
         boxs[8].classList.contains('firstUser') ) {
             p1score++
             score1.textContent = p1score
-            alert('Player One Win')}
+            alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[6].classList.contains('secondUser') &&
         boxs[7].classList.contains('secondUser') &&
         boxs[8].classList.contains('secondUser')  ) {
             p2score++ 
             score2.textContent = p2score
-            alert('Player Two Win')}
+            alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[0].classList.contains('firstUser') &&
         boxs[3].classList.contains('firstUser') &&
@@ -97,6 +123,10 @@ function handleClick (event){
             p1score++
             score1.textContent = p1score
             alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
         }
 
     if (boxs[0].classList.contains('secondUser') &&
@@ -104,63 +134,108 @@ function handleClick (event){
         boxs[6].classList.contains('secondUser') ) {
             p2score++ 
             score2.textContent = p2score
-            alert('Player Two Win')}
+            alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[1].classList.contains('firstUser') &&
         boxs[4].classList.contains('firstUser') &&
         boxs[7].classList.contains('firstUser') ) {
             p1score++
             score1.textContent = p1score
-            alert('Player One Win')}
+            alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
     
     if (boxs[1].classList.contains('secondUser') &&
         boxs[4].classList.contains('secondUser') &&
         boxs[7].classList.contains('secondUser') ) {
             p2score++ 
             score2.textContent = p2score
-            alert('Player Two Win')}
+            alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[2].classList.contains('firstUser') &&
         boxs[5].classList.contains('firstUser') &&
         boxs[8].classList.contains('firstUser') ) {
             p1score++
             score1.textContent = p1score
-            alert('Player One Win')}
+            alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[2].classList.contains('secondUser') &&
         boxs[5].classList.contains('secondUser') &&
         boxs[8].classList.contains('secondUser') ) {
             p2score++ 
             score2.textContent = p2score
-            alert('Player Two Win')}
+            alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[0].classList.contains('firstUser') &&
         boxs[4].classList.contains('firstUser') &&
         boxs[8].classList.contains('firstUser') ) {
             p1score++
             score1.textContent = p1score
-            alert('Player One Win')}
+            alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[0].classList.contains('secondUser') &&
         boxs[4].classList.contains('secondUser') &&
         boxs[8].classList.contains('secondUser') ) {
             p2score++ 
             score2.textContent = p2score
-            alert('Player Two Win')}
+            alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[2].classList.contains('firstUser') &&
         boxs[4].classList.contains('firstUser') &&
         boxs[6].classList.contains('firstUser') ) {
             p1score++
             score1.textContent = p1score
-            alert('Player One Win')}
+            alert('Player One Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
 
     if (boxs[2].classList.contains('secondUser') &&
         boxs[4].classList.contains('secondUser') &&
         boxs[6].classList.contains('secondUser') ) {
             p2score++ 
             score2.textContent = p2score
-            alert('Player Two Win')}
+            alert('Player Two Win')
+            boxs.forEach(function(box){
+                box.classList.add('disable')
+
+            })
+        }
     
     
     // if (boxs[winningCombination[4]].classList.contains('secondUser')){
@@ -192,6 +267,9 @@ function playAgain (){
         }
         if (boxs[i].classList.contains('secondUser')){
             boxs[i].classList.remove('secondUser')
+        }
+        if (boxs[i].classList.contains('disable')){
+            boxs[i].classList.remove('disable')
         }
 
     }
