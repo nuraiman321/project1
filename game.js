@@ -40,6 +40,9 @@ function handleClick (event){
         playerTwo.classList.remove('player-two')
         playerOne.classList.add('player-one')
     }
+    if (count === 9){
+        alert('no winner this time')
+    }
     
     if (boxs[0].classList.contains('firstUser') &&
         boxs[1].classList.contains('firstUser') &&
